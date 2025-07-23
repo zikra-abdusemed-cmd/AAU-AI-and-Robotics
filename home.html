@@ -3,151 +3,250 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Robotics and AI Club</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
-<nav>
-    <ul>
-        <li><a href="#home">Home</a></li>
-       <li><a href="#about_us">About Us</a></li>
-       <li><a href="#partners">Partners</a></li>
-       <li><a href="#projects">Projects</a></li>
-       <li><a href="#courses">Courses</a></li>
-       <li><a href="#events">Events</a></li>
-       <li><a href="#contact_us">Contact Us</a></li>
-    </ul>
-</nav>
+<header class="header">
+    <nav class="navbar">
+        <div class="logo"><!-- Logo image here --></div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#partners">Partners</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 </header>
 <main>
-    <section id="home">
-        <h1>Welcome to the Robotics and AI Club at Addis Ababa University</h1>
-        <p>Our club is dedicated to fostering innovation and collaboration among students passionate about robotics and artificial intelligence. We engage in hands-on projects, collaborate with industry organizations, and provide valuable learning opportunities through courses and workshops. Join us as we explore the exciting world of technology, enhance our skills, and create solutions that can make a difference.
-             Whether you`re a beginner or an experienced enthusiast, there`s a place for you here!</p>
-        <img src="" alt="Robotic Image" style="width:100%; height:auto;">
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-logo"><!-- Small logo --></div>
+                <h1>Robotics and AI Club</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan.</p>
+            </div>
+            <div class="hero-image">
+                <img src="robot.png" alt="Robot" />
+            </div>
+        </div>
     </section>
-    <section id="about_us">
+    <!-- About Us -->
+    <section id="about" class="about-section">
         <h2>About Us</h2>
-        <p>The Robotics and AI Club at Addis Ababa University was founded to bring together students who are eager to learn, innovate, and excel in the rapidly evolving fields of robotics and artificial intelligence. Our mission is to create a vibrant community that encourages creativity, collaboration, and practical experience. We believe that by fostering an environment where students can share ideas, work on hands-on projects, and engage with industry professionals,
-             we can inspire the next generation of innovators.</p>
-        <div>
-            <div>
-                <p>50+</p>
-                <p>150+</p>
-                <p>10+</p>
-                <p>5+</p>
-            </div>
-            <div>
-                <p>Projects</p>
-                <P>Students</P>
-                <p>Events</p>
-                <0>Courses</0>
-            </div>
-
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+        <div class="about-stats">
+            <div class="stat"><span>60+</span><p>Projects</p></div>
+            <div class="stat"><span>80+</span><p>Students</p></div>
+            <div class="stat"><span>50+</span><p>Events</p></div>
+            <div class="stat"><span>5+</span><p>Courses</p></div>
         </div>
     </section>
-    <section id="our_team">
+    <!-- Our Team -->
+    <section id="team" class="team-section">
         <h2>Our Team</h2>
-        <div>
-            <img src="" alt="Team Member 1" style="width:100px; height:100px;">
-            <p>Member 1</p>
-            <p>Role</p>
-            <P>Bio of member 1</P>
-            <div>
-                <img src="" alt="LinkedIn" style="width:30px; height:30px;">
-                <img src="" alt="GitHub" style="width:30px; height:30px;">
-                <img src ="" alt="Email" style="width:30px; height:30px;">
+        <div class="team-cards">
+            <div class="team-card">
+                <div class="team-img"><!-- Team member image --></div>
+                <h3>Jane Doe</h3>
+                <p>Lead Engineer</p>
+                <p>Short bio about Jane.</p>
+                <div class="team-socials">
+                    <a href="#"><!-- LinkedIn icon --></a>
+                    <a href="#"><!-- GitHub icon --></a>
+                    <a href="#"><!-- Email icon --></a>
+                </div>
             </div>
-        </div>    
+            <div class="team-card">
+                <div class="team-img"></div>
+                <h3>John Smith</h3>
+                <p>AI Specialist</p>
+                <p>Short bio about John.</p>
+                <div class="team-socials">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-img"></div>
+                <h3>Mary Lee</h3>
+                <p>Robotics Lead</p>
+                <p>Short bio about Mary.</p>
+                <div class="team-socials">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+            <div class="team-card">
+                <div class="team-img"></div>
+                <h3>Alex Kim</h3>
+                <p>Coordinator</p>
+                <p>Short bio about Alex.</p>
+                <div class="team-socials">
+                    <a href="#"></a>
+                    <a href="#"></a>
+                    <a href="#"></a>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="partners">
+    <!-- Partners -->
+    <section id="partners" class="partners-section">
         <h2>Partners</h2>
-        <div>
-            <img src="" alt="Partner Logo 1" style="width:100px; height:100px;">
-            <img src="" alt="Partner Logo 2" style="width:100px; height:100px;">
-            <img src="" alt="Partner Logo 3" style="width:100px; height:100px;">
+        <div class="partners-logos">
+            <div class="partner-logo"></div>
+            <div class="partner-logo"></div>
+            <div class="partner-logo"></div>
+            <div class="partner-logo"></div>
         </div>
-    <section id="projects">
+    </section>
+    <!-- Motto -->
+    <section class="motto-section">
+        <div class="motto-content">
+            <div class="motto-text">
+                <h2>Motto</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus.</p>
+            </div>
+            <div class="motto-image">
+                <img src="robot-hand.png" alt="Robot Hand" />
+            </div>
+        </div>
+    </section>
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
         <h2>Projects</h2>
-        <div>
-                <img src="" alt="Project Image" style="width:100%; height:auto;">
-            <div>    
-                <h3>Project Title</h3>
-                <p>Short description of the project.</p>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="project1.jpg" alt="Project 1" />
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                </div>
             </div>
-        </div>    
-        <div>
-                <img src="" alt="Project Image" style="width:100%; height:auto;">
-            <div>    
-                <h3>Project Title</h3>
-                <p>Short description of the project.</p>
+            <div class="project-card">
+                <img src="project2.jpg" alt="Project 2" />
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                </div>
             </div>
-        </div> 
+            <div class="project-card">
+                <img src="project3.jpg" alt="Project 3" />
+                <div class="project-info">
+                    <h3>Project Title</h3>
+                    <p>Short description of the project.</p>
+                </div>
+            </div>
+        </div>
     </section>
-    <section id="courses">
+    <!-- Courses -->
+    <section id="courses" class="courses-section">
         <h2>Courses</h2>
-        <div></div>
-        <div>
-            <img src="" alt="Robotics" style="width:100%; height:auto;">
-            <h3>Robotics</h3>
-            <p>Learn the fundamentals of robotics, including design, programming, and control systems.</p>
-            <div>
-                <img src="" alt="lesson" style="width:30px; height:30px;">
-                <p>5+ Lessons</p>
+        <div class="course-cards">
+            <div class="course-card">
+                <div class="course-icon"></div>
+                <h3>Robotics</h3>
+                <p>Learn the fundamentals of robotics, including design, programming, and control systems.</p>
+                <div class="course-meta">
+                    <span>5+ Lessons</span>
+                    <span>30+ Hours</span>
+                </div>
             </div>
-            <div>
-                <img src="" alt="time" style="width:30px; height:30px;">
-                <p>30+ Hours</p>
+            <div class="course-card">
+                <div class="course-icon"></div>
+                <h3>AI & ML</h3>
+                <p>Explore the world of AI, including machine learning, neural networks, and NLP.</p>
+                <div class="course-meta">
+                    <span>5+ Lessons</span>
+                    <span>30+ Hours</span>
+                </div>
             </div>
-        </div> 
-
-       <div>
-            <img src="" alt="Artificial Intelligence" style="width:100%; height:auto;">
-            <h3>Artificial Intelligence</h3>
-            <p>Explore the world of AI, including machine learning, neural networks, and natural language processing.</p>
-            <div>
-                <img src="" alt="lesson" style="width:30px; height:30px;">
-                <p>5+ Lessons</p>
-            </div>
-            <div>
-                <img src="" alt="time" style="width:30px; height:30px;">
-                <p>30+ Hours</p>
-            </div>
-        </div>  
-        
-        <div>
-            <img src="" alt="Computer Vision" style="width:100%; height:auto;">
-            <h3>Computer Vision</h3>
-            <p>Learn the fundamentals of robotics, including design, programming, and control systems.</p>
-            <div>
-                <img src="" alt="lesson" style="width:30px; height:30px;">
-                <p>5+ Lessons</p>
-            </div>
-            <div>
-                <img src="" alt="time" style="width:30px; height:30px;">
-                <p>30+ Hours</p>
+            <div class="course-card">
+                <div class="course-icon"></div>
+                <h3>Computer Vision</h3>
+                <p>Learn about image processing, object detection, and more.</p>
+                <div class="course-meta">
+                    <span>5+ Lessons</span>
+                    <span>30+ Hours</span>
+                </div>
             </div>
         </div>
-
-    </div>
     </section>
-    <section id="events">
+    <!-- Events -->
+    <section id="events" class="events-section">
         <h2>Events</h2>
-        <div>
-            <img src="" alt="Event Image" style="width:100%; height:auto;">
-            <div>
-                <p>Category</p>
-                <h3>Title</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus inventore tempora debitis quae. Laudantium fugit atque ducimus quibusdam cupiditate debitis aut autem cum libero et, nisi
-                     quis inventore laboriosam voluptate.</p>            
+        <div class="event-cards">
+            <div class="event-card">
+                <img src="event1.jpg" alt="Event 1" />
+                <div class="event-info">
+                    <h3>Title</h3>
+                    <p>Short description of the event.</p>
+                    <div class="event-meta">
+                        <span>July 2025</span>
+                        <a href="#">See details</a>
+                    </div>
+                </div>
             </div>
-            <div>
-                <p>July 2025</p>
-                <p>see details</p>
+            <div class="event-card">
+                <img src="event2.jpg" alt="Event 2" />
+                <div class="event-info">
+                    <h3>Title</h3>
+                    <p>Short description of the event.</p>
+                    <div class="event-meta">
+                        <span>August 2025</span>
+                        <a href="#">See details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="event3.jpg" alt="Event 3" />
+                <div class="event-info">
+                    <h3>Title</h3>
+                    <p>Short description of the event.</p>
+                    <div class="event-meta">
+                        <span>September 2025</span>
+                        <a href="#">See details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="event4.jpg" alt="Event 4" />
+                <div class="event-info">
+                    <h3>Title</h3>
+                    <p>Short description of the event.</p>
+                    <div class="event-meta">
+                        <span>October 2025</span>
+                        <a href="#">See details</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </section>   
-
+    </section>
+    <!-- Contact -->
+    <footer id="contact" class="contact-section">
+        <div class="contact-content">
+            <div class="contact-info">
+                <h2>Contact</h2>
+                <p>email@domain.com</p>
+                <div class="contact-socials">
+                    <a href="#"><!-- Instagram icon --></a>
+                    <a href="#"><!-- LinkedIn icon --></a>
+                </div>
+            </div>
+            <div class="contact-divider"></div>
+            <div class="contact-form">
+                <!-- Optional: Add a contact form here -->
+            </div>
+        </div>
+    </footer>
 </main>
 </body>
 </html>
