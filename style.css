@@ -84,6 +84,7 @@ body {
     font-size: 1.1rem;
     color: #ccc;
     max-width: 800px;
+    text-align: justify;
 }
 .hero-image img {
     width: 260px;
@@ -106,8 +107,9 @@ body {
 }
 .about-section p {
     color: #bbb;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto 2rem auto;
+    text-align: justify;
 }
 .about-stats {
     display: flex;
@@ -363,39 +365,51 @@ body {
 /* Card container */
 .event-card {
   display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  min-height: 140px;
+
   background: #1a1a1a;
-  border: 1px solid transparent;
+  border: 1px solid #22c55e;
   border-radius: 0.75rem;
   overflow: hidden;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-  padding: 0.2rem ,0.4rem;
+
+  padding: 0; /* remove internal padding */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
-}
-.event-card:hover {
-  border-color: #22c55e; /* green glow */
-  box-shadow: 0 0 10px rgba(34, 197, 94, 0.5);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
 }
 
-/* Image */
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(24, 133, 64, 0.5);
+}
+
 .event-card img {
-  width: 150px;
-  height: auto;
-  object-fit:contain;
+  width: 130px;
+  height: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+  align-self: center; /* ✅ Center vertically */
   border-top-left-radius: 0.75rem;
   border-bottom-left-radius: 0.75rem;
 }
 
-/* Info block */
 .event-info {
+  flex: 1;
   padding: 1rem 1.25rem;
   display: flex;
   flex-direction: column;
-  flex: 1;
+  justify-content: space-between;
 }
 
 /* Title */
 .event-info h3 {
-  color: #22c55e;
+  color: #27944f;
   font-size: 1.2rem;
   margin: 0 0 0.5rem 0;
 }
@@ -431,6 +445,8 @@ body {
 .event-meta a:hover {
   background-color: #e4e4e4;
 }
+
+
 
 
 
