@@ -12,13 +12,14 @@ body {
     position: sticky;
     top: 0;
     z-index: 100;
+    padding: 1rem;
 }
 .navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1200px;
-    margin: 0 auto;
+    margin:0 auto;
     padding: 0.5rem 2rem;
 }
 .logo {
@@ -87,7 +88,7 @@ body {
     text-align: justify;
 }
 .hero-image img {
-    width: 260px;
+    width: 350px;
     max-width: 100%;
     border-radius: 50%;
     background: #222;
@@ -100,6 +101,7 @@ body {
     padding: 2rem 1rem;
     box-shadow: 0 5px 35.2px 3px #708E79 inset;
     text-align: center;
+    scroll-margin-top: 120px
 }
 .about-section h2 {
     font-size: 2rem;
@@ -141,6 +143,7 @@ body {
 }
 
 .team-section {
+    scroll-margin-top: 120px;
     margin: 3rem 0;
     text-align: center;
 }
@@ -200,6 +203,8 @@ body {
     padding: 2rem 1rem;
     margin: 2rem 0;
     text-align: center;
+    scroll-margin-top: 120px
+
 }
 .partners-section h2 {
     font-size: 2rem;
@@ -207,14 +212,17 @@ body {
 }
 .partners-logos {
     display: flex;
-    gap: 2.5rem;
+    gap: 4.5rem;
     justify-content: center;
     flex-wrap: wrap;
 }
+.partner {
+  text-align: center;
+}
 .partner-logo {
-    width: 80px;
-    height: 80px;
-    background: #bbb;
+    width: 130px;
+    height: 130px;
+    background: #181717;
     border-radius: 50%;
     display: inline-block;
     margin: 0.5rem 0;
@@ -259,6 +267,8 @@ body {
 .projects-section {
     margin: 3rem 0;
     text-align: center;
+    scroll-margin-top: 120px
+
 }
 .projects-section h2 {
     font-size: 2rem;
@@ -297,6 +307,8 @@ body {
 .courses-section {
     margin: 3rem 0;
     text-align: center;
+    scroll-margin-top: 120px
+
 }
 .courses-section h2 {
     font-size: 2rem;
@@ -346,7 +358,9 @@ body {
 /* Section background */
 .events-section {
   padding: 2rem;
-  background-color: #111; /* dark background */
+  background-color: #111; 
+  scroll-margin-top: 120px
+
 }
 .events-section h2 {
   color: #fff;
@@ -447,10 +461,151 @@ body {
 }
 
 
+.hidden {
+  display: none;
+}
+.event-detail {
+  padding: 2rem;
+  background-color: #111;
+  color: white;
+}
+.event-detail button {
+  background-color: #22c55e; 
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s ease;
+}
 
+.event-detail button:hover {
+  background-color: #16a34a; 
+}
 
+.event-detail {
+  padding: 2rem;
+  background-color: #111;
+  color: white;
+}
 
+.event-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
+.event-header h1 {
+  font-size: 2rem;
+  color: #22c55e;
+}
+
+.event-header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.presentation img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+.event-video .video-container iframe {
+  width: 100%;
+  max-width: 700px;
+  height: 400px;
+  border-radius: 12px;
+}
+
+.sponsor-logos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.sponsor-logos img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  background: white;
+  padding: 0.25rem;
+}
+
+.back-button {
+  margin: 2rem auto;
+  display: block;
+  padding: 0.75rem 1.5rem;
+  background-color: #004080;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.back-button:hover {
+  background-color: #002f5e;
+}
+
+.event-detail-sponsors {
+  margin-top: 2rem;
+  text-align: center;
+}
+.event-detail-sponsors {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.event-detail-sponsors h2 {
+  color: #22c55e;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.sponsor-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.sponsor-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #222;
+  border: 2px solid #22c55e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.sponsor-circle:hover {
+  transform: scale(1.1);
+}
+
+.sponsor-circle img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#event-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  object-fit: cover;
+}
+
+.presentation img {
+  max-height: 300px;
+}
 
 
 

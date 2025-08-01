@@ -104,14 +104,27 @@
     </section>
     <!-- Partners -->
     <section id="partners" class="partners-section">
-        <h2>Partners</h2>
-        <div class="partners-logos">
-            <div class="partner-logo"> <img src="images\partners\a09988944815ccecfddae75caef7c44a58d3de36.jpg" class="partner-logo"></div>
-            <div class="partner-logo"> <img src="images\partners\4a23041d963b8f3d866852a987db4e35cc214b3e.jpg" class="partner-logo"></div>
-            <div class="partner-logo"> <img src="images\partners\d8b3f5bfe6c0a56dec8ed544ff6a3e4368fad93f.jpg" class="partner-logo"></div>
-            <div class="partner-logo"> <img src="images\partners\0833e8e00587821e66332d43849d66d3ac469e17.jpg" class="partner-logo"></div>
-        </div>
-    </section>
+  <h2>Partners</h2>
+  <div class="partners-logos">
+    <div class="partner">
+      <img src="images/partners/a09988944815ccecfddae75caef7c44a58d3de36.jpg" class="partner-logo">
+      <h3>Addis Ababa University</h3>
+    </div>
+    <div class="partner">
+      <img src="images/partners/4a23041d963b8f3d866852a987db4e35cc214b3e.jpg" class="partner-logo">
+      <h3>Ethio Robo Robotics</h3>
+    </div>
+    <div class="partner">
+      <img src="images/partners/d8b3f5bfe6c0a56dec8ed544ff6a3e4368fad93f.jpg" class="partner-logo">
+      <h3>Nerd Lab</h3>
+    </div>
+    <div class="partner">
+      <img src="images/partners/0833e8e00587821e66332d43849d66d3ac469e17.jpg" class="partner-logo">
+      <h3>Ethioadvise</h3>
+    </div>
+  </div>
+</section>
+
     <!-- Motto -->
     <section class="motto-section">
         <div class="motto-content">
@@ -197,7 +210,7 @@
                     <p> The opening ceremony for the VEX competition aimed to create awareness about the rules and objectives of the event. Participants gathered to learn essential guidelines and strategies to enhance their robotics skills.</p>
                     <div class="event-meta">
                         <span>July 2025</span>
-                        <a href="#">See details</a>
+                        <a href="#" onclick="showEventDetails('vex-opening'); return false;">See details</a>
                     </div>
                 </div>
             </div>
@@ -209,7 +222,7 @@
                     <p>Short description of the event.</p>
                     <div class="event-meta">
                         <span>August 2025</span>
-                        <a href="#">See details</a>
+                        <a href="#" onclick="showEventDetails('ai-in-robotics'); return false;">See details</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +234,7 @@
                     <p>The first VEX Robotics competition held at the Addis Ababa University (AAU) CTBE campus marked a significant milestone for students eager to showcase their skills in robotics.</p>
                     <div class="event-meta">
                         <span>September 2025</span>
-                        <a href="#">See details</a>
+                        <a href="#" onclick="showEventDetails('vex-game'); return false;">See details</a>
                     </div>
                 </div>
             </div>
@@ -233,12 +246,44 @@
                     <p>The closing ceremony held at the Science Museum in 4K was a grand celebration, drawing students from across Ethiopia who participated in the VEX Robotics competition.This event marked the culmination of weeks of hard work, creativity, and teamwork.</p>
                     <div class="event-meta">
                         <span>October 2025</span>
-                        <a href="#">See details</a>
+                        <a href="#" onclick="showEventDetails('closing-ceremony'); return false;">See details</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="event-detail" class="hidden event-detail">
+        <header class="event-header">
+            <h1 id="event-title">Event Title</h1>
+            <p id="event-date">Date: TBD</p>
+        </header>
+
+        <main>
+            <section class="presentation">
+            <h2>Event Presentation</h2>
+            <img id="event-image" src="" alt="Event Image" />
+            <p id="event-description">Event description here...</p>
+            </section>
+
+            <section id="event-video-section" class="event-video hidden">
+            <h2>Event Video</h2>
+            <div class="video-container" id="event-video"></div>
+            </section>
+
+            <section class="event-sponsors hidden" id="event-sponsors-section">
+            <h2>Event Sponsors</h2>
+            <div class="sponsor-logos" id="sponsor-logos">
+                <!-- Sponsor logos dynamically inserted here if any -->
+            </div>
+            </section>
+        </main>
+
+        <button onclick="goBack()" class="back-button">← Back to Events</button>
+    </section>
+
+
+
     <!-- Contact -->
     <footer id="contact" class="contact-section">
         <div class="contact-content">
@@ -264,5 +309,6 @@
         </div>
     </footer>
 </main>
+<script src="script.js"></script>
 </body>
 </html>
